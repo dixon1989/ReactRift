@@ -1,7 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Font from 'expo-font';
 import { useEffect, useState } from 'react';
-
 import { RnColorScheme } from 'twrnc';
 
 export default function useCachedResources() {

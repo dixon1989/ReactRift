@@ -1,9 +1,10 @@
-import React from "react";
-import renderer from "react-test-renderer";
-import ExampleComponent from "../ExampleComponent";
+import React from 'react';
+import renderer from 'react-test-renderer';
 
-describe("ExampleComponent", () => {
-  it("renders correctly", () => {
+import ExampleComponent from '../ExampleComponent';
+
+describe('ExampleComponent', () => {
+  it('renders correctly', () => {
     // Render the component
     const component = renderer.create(<ExampleComponent />);
 

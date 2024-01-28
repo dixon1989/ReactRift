@@ -1,8 +1,9 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import tw from '../common/tailwind';
 import React, { ReactNode } from 'react';
 import { Appearance, useColorScheme } from 'react-native';
 import { RnColorScheme, useAppColorScheme, useDeviceContext } from 'twrnc';
+
+import tw from '../common/tailwind';
 
 const TailwindContext = React.createContext<{
   colorScheme?: RnColorScheme;

@@ -1,6 +1,6 @@
 // src/ExampleComponent.js
-import React from "react";
-import { View, Text } from "react-native";
+import React from 'react';
+import { Text, View } from 'react-native';
 
 const ExampleComponent = () => {
   return (
