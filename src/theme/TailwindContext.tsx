@@ -52,7 +52,7 @@ export function TailwindProvider({
   React.useEffect(() => {
     console.log('Saving scheme', colorScheme);
     Appearance.setColorScheme(colorScheme);
-    AsyncStorage.setItem('LightDarkModeSetting', colorScheme ?? 'dark');
+    AsyncStorage.setItem('LightDarkModeSetting', 'light' ?? 'dark');
   }, [colorScheme]);
 
   React.useEffect(() => {
