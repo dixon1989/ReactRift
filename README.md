@@ -1,4 +1,6 @@
-# ReactRift React Native
+# ReactRift - React Native Learning Project
+
+This project is a result of my continuous learning journey in React Native development. Created as a part of ongoing education, this mobile app encapsulates best practices, industry-standard patterns, and innovative solutions to common challenges faced in the realm of mobile app development.
 
 ReactRift react-native expo app.
 
@@ -42,7 +44,14 @@ This is one way to run your app — you can also run it directly from within And
 
 You've successfully run and modified your React Native App. :partying_face:
 
-## Dev Notes - Current Progress
+## Features
+
+- Incorporates fundamental React Native concepts and functionalities
+- Demonstrates effective state management and component communication
+- Showcases responsive design and a user-friendly interface
+- Integrates innovative solutions to address common mobile app development challenges
+
+## Dev Notes and Progress
 
 - Expo 50
 - Typescript
