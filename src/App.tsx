@@ -1,20 +1,25 @@
+
+import tw from './common/tailwind';
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import { bodyLarge } from "./theme/typography";
+import useCachedResources from './common/hooks/useCachedResources';
+import { TailwindProvider } from './theme/TailwindContext';
 
 export default function App() {
+
+  const { isLoadingComplete, initialTheme } = useCachedResources();
+
+  if (!isLoadingComplete) {
+    return null;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <TailwindProvider initialTheme={initialTheme}>
+    <View style={tw.style('items-center justify-center flex-1')}>
+      <Text style={tw.style(bodyLarge)}>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
+    </TailwindProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
